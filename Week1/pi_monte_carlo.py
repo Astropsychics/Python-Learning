@@ -40,3 +40,4 @@ if __name__ == "__main__":
 #1.1 - Added import division text to force float variable from division.
 #      This is needed for all versions of python pre-3.0
 #    - Added additional comments to program
+#1.2 - Added output of data to a file 
