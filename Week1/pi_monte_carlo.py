@@ -30,10 +30,10 @@ if __name__ == "__main__":
 	end = time.clock()
 	#Ends run time clock 
 
-	file = open("pi_1e8_output.dat","w")
-	file.write("Number of runs: " + str(N_POINTS) + "\n")
+	file = open('%.0e' % N_POINTS  + "_output.dat","w")
+	file.write("Number of runs: " + '%.0e' % N_POINTS + "\n")
 	file.write("Pi: " + str(x) + "\n") 
-	file.write("Total time: " + str(end-start) + " seconds")
+	file.write("Total time: " + str(end-start) + " seconds \n")
 	file.close()
 	#Creates output file and prints out value of pi and time of calculation
 
