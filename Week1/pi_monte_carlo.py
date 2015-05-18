@@ -12,7 +12,7 @@ import time			#Used to calculate run time for program
 N_POINTS = 10**8 		#Number of iterations
 
 def pi_calculation(n): 
-	return 4 * sum(1 for _ in range(n) if (random.random()**2+random.random()**2) < 1) /n
+	return 4. * sum(1 for _ in xrange(0,n,1) if (random.random()**2+random.random()**2) < 1) /n
 	#Returns pi as calculated by summing all points within a circle of radius 1 
 	#and dividing it by the total number of iterations.
 	#Note: the result is multiplied by 4 as these calculations are only
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 	end = time.clock()
 	#Ends run time clock 
 
-	file = open("pi_output.dat","w")
+	file = open("pi_1e8_output.dat","w")
 	file.write("Number of runs: " + str(N_POINTS) + "\n")
 	file.write("Pi: " + str(x) + "\n") 
 	file.write("Total time: " + str(end-start) + " seconds")
@@ -45,3 +45,4 @@ if __name__ == "__main__":
 #    - Added additional comments to program
 #1.2 - Added output of data to a file 
 #1.3 - Added shebang line to make the script executable
+#1.4 - Replaced range with xrange to remove memory overflow at higher iterations
