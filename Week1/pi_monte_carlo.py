@@ -1,4 +1,5 @@
-#!/usr/bin/env python		#Added shebang to make script executable
+#!/usr/bin/env python		
+#Added shebang to make script executable
 
 # Monte Carlo Pi Calculation 
 # by Brad Snios
@@ -30,7 +31,7 @@ if __name__ == "__main__":
 	#Ends run time clock 
 
 	file = open("pi_output.dat","w")
-	file.write(" Number of runs: " + str(N_POINTS) + "\n")
+	file.write("Number of runs: " + str(N_POINTS) + "\n")
 	file.write("Pi: " + str(x) + "\n") 
 	file.write("Total time: " + str(end-start) + " seconds")
 	file.close()
