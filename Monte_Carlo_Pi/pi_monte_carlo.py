@@ -4,6 +4,7 @@
 # Monte Carlo Pi Calculation 
 # by Brad Snios
 # 5/16/15  
+# Compiled to run on python 2.6
 
 from __future__ import division	#Needed since division in python prior to 3.0 is stupid
 import random			#Used for random number creation
