@@ -25,7 +25,7 @@ if __name__ == "__main__":
 #Ensures the program is run directly 
 
 	print("\nWelcome to the Solar System Model.")
-	print("This model calculates the total number of rotationis for each planet")
+	print("This model calculates the total number of rotations for each planet")
 	print("for a user-set time, as well as the time until next alignment.\n")
 	TIME = input("Please input the time elapsed, in Earth years: ")  
 	#Greeting and prompts user for TIME input	
